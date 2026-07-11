@@ -17,8 +17,8 @@ class AuditLogger:
             "bounding_box": bbox
         })
 
-def export_log(self, output_csv_path: Path):
-        """Export the aggregated data as audit trail to a CSV file."""
+    def export_log(self, output_csv_path: Path):
+        """Exports the aggregated audit trail to a CSV."""
         df = pd.DataFrame(self.records)
         df.to_csv(output_csv_path, index=False)
         print(f"✅ Audit log exported with {len(self.records)} records to: {output_csv_path}")
