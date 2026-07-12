@@ -9,8 +9,8 @@ from dicom_formatter import format_to_dicom
 from audit_logger import AuditLogger
 
 # --- GLOBAL PATH CONFIGURATION ---
-INPUT_ROOT = Path(r"D:\Work\Synth_PHI_02\Database_02")
-OUTPUT_ROOT = Path(r"E:\CVD\Synthetic_PHI_Dataset_02")
+INPUT_ROOT = Path(r"LOCATOION_OF_THE_DATASET")
+OUTPUT_ROOT = Path(r"WHERE_TO_STORE_GENERATED_FILES")
 
 def run_pipeline():
     # Initialize infra
