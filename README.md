@@ -41,7 +41,7 @@ The downloaded Stanford Lung Database follows a nested directory structure that 
 - https://stanfordmedicine.app.box.com/s/ajv4y3fv5i6mhs345mwhbvkg80cuvzcc
 - https://github.com/kumarandre/OpenPOCUS
 
-##Tech Stack
+## Tech Stack
 - Language: Python
 - Environment/IDE: VS Code
 - Dataset Processing/Orchestration: Modular Python scripts + `pipeline_manager.py`
@@ -55,11 +55,13 @@ The downloaded Stanford Lung Database follows a nested directory structure that 
 # Installation & Setup
 It is recommended to run this pipeline within a virtual environment to prevent dependency conflicts with your system's global Python installation.
 1.Create and activate a virtual environment: 
-**Windows**  - `python -m venv synth_data_gen`
-- - - `.\enterprise_deid\Scripts\activate`
+**Windows**  
+- `python -m venv synth_data_gen`
+- - `.\enterprise_deid\Scripts\activate`
 
-**Mac/Linux**  - `python3 -m venv enterprise_deid`
-- - - `source enterprise_deid/bin/activate`
+**Mac/Linux**  
+- `python3 -m venv enterprise_deid`
+- - `source enterprise_deid/bin/activate`
 
 2.Install dependencies: Install the required packages using the provided requirements.txt file:
 `pip install -r requirements.txt`
