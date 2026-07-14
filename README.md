@@ -102,3 +102,7 @@ By implementing this snippet, the pipeline will safely complete the selected num
 ## Understanding DICOM & PHI
 Digital Imaging and Communications in Medicine (DICOM) is the global technical standard for storing and transmitting medical images. Unlike a standard .jpg which only contains pixels, a .dcm file securely groups the pixel data together with a highly structured list of metadata "headers".
 These headers contain explicit Protected Health Information (PHI) such as Patient's Name, Patient ID, and Birth Date, as well as indirect identifiers like Device Serial Number. To comply with the HIPAA Privacy Rule's Safe Harbor method, 18 specific categories of identifiers must be removed or sanitized from these headers. This pipeline programmatically injects synthetic PHI into these headers to simulate the real-world challenge of scrubbing them.
+
+
+
+### `master_phi_ground_truth.csv.gz` file contains the synthetic information generated during the execution of the `pipeline_manager.py` in CSV format. Extract the file to access the inforamtion. 
